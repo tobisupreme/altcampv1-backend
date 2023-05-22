@@ -20,4 +20,5 @@ jobs:
           echo "TEST_HOST: $TEST_HOST"
           echo ${{ secrets.TEST_PORT}}
           echo ${{ secrets.TEST_HOST}}
+      - name: Check environment variables from app
         run: npm run check_env
